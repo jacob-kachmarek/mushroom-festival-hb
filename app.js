@@ -65,7 +65,7 @@ function displayFriends() {
             if (mushroomCount === 0) {
                 alert('No more mushrooms! Go and Forage!');
             }
-            if ((friend.satisfaction < 3, mushroomCount > 0)) {
+            if (friend.satisfaction < 3 && mushroomCount > 0) {
                 friend.satisfaction++;
                 mushroomCount--;
             }
