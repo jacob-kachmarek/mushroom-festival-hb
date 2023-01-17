@@ -62,8 +62,8 @@ function displayFriends() {
         const newFriendData = renderFriend(friend);
         newFriendData.addEventListener('click', () => {
             const friendCont = newFriendData;
-            if ((friendData.satisfaction < 3, mushroomCount > 0)) {
-                friendData.satisfaction++;
+            if ((friend.satisfaction < 3, mushroomCount > 0)) {
+                friend.satisfaction++;
                 mushroomCount--;
             }
             displayFriends();
