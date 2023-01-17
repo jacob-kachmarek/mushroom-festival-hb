@@ -66,6 +66,10 @@ function displayFriends() {
                 friend.satisfaction++;
                 mushroomCount--;
             }
+            if (mushroomCount === 0) {
+                alert('No more mushrooms! Go and Forage!');
+            }
+
             displayFriends();
             displayMushrooms();
         });
