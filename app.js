@@ -62,14 +62,13 @@ function displayFriends() {
         const newFriendData = renderFriend(friend);
         newFriendData.addEventListener('click', () => {
             const friendCont = newFriendData;
+            if (mushroomCount === 0) {
+                alert('No more mushrooms! Go and Forage!');
+            }
             if ((friend.satisfaction < 3, mushroomCount > 0)) {
                 friend.satisfaction++;
                 mushroomCount--;
             }
-            if (mushroomCount === 0) {
-                alert('No more mushrooms! Go and Forage!');
-            }
-
             displayFriends();
             displayMushrooms();
         });
